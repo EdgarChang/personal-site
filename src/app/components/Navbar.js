@@ -1,11 +1,42 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="sticky top-0 bg-teal-700 text-white py-4 px-6 shadow-md z-10">
-      <div className="flex justify-center gap-4">
-        <a href="#home" className="px-4 py-2 bg-blue-500 text-white rounded-lg">Home</a>
-        <a href="#projects" className="px-4 py-2 bg-green-500 text-white rounded-lg">Projects</a>
-        <a href="#experience" className="px-4 py-2 bg-gray-800 text-white rounded-lg">Experience</a>
-        <a href="#contact" className="px-4 py-2 bg-purple-500 text-white rounded-lg">Contact</a>
+    <div
+      className={`sticky top-0 z-10 transition-all duration-300 shadow-lg ${
+        isScrolled ? "py-1 px-1" : "py-4 px-6"
+      } ${isScrolled ? "bg-emerald-200" : "bg-emerald-600"}`}
+    >
+      <div className="flex justify-end gap-4">
+        <a href="#projects" className="px-4 py-2 text-xl font-bold text-lime-950 rounded-lg">
+          Projects
+        </a>
+        <a href="#experience" className="px-4 py-2 text-xl font-bold text-lime-950 rounded-lg">
+          Experience
+        </a>
+        <a href="#contact" className="px-4 py-2 text-xl font-bold text-lime-950 rounded-lg">
+          Contact
+        </a>
       </div>
     </div>
   );
