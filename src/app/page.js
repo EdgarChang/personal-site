@@ -40,7 +40,7 @@ export default function Page() {
       </Head>
       <div className="min-h-screen flex flex-col bg-teal-500">
         <Navbar />
-        <HomeSection id="home-section" />
+        <HomeSection />
         <ProjectsSection />
         <ExperienceSection />
         <ContactSection />
