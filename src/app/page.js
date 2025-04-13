@@ -38,11 +38,11 @@ export default function Page() {
         <title>My Portfolio</title>
         <meta name="description" content="Personal website for Edgar Chang." />
       </Head>
-      <div className="min-h-screen flex flex-col bg-teal-500">
+      <div className="min-h-screen flex flex-col bg-secondary">
         <Navbar />
         <HomeSection />
-        <ProjectsSection />
         <ExperienceSection />
+        <ProjectsSection />
         <ContactSection />
         {/* Conditionally render the button */}
         {showButton && (
