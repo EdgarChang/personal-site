@@ -4,7 +4,7 @@ export default function HomeSection() {
       id="home"
       className="min-h-screen flex flex-col items-center bg-primary justify-center p-6 relative"
     >
-      <div className="min-h-screen flex">
+      <div className="min-h-screen flex gap-28">
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-start bg-accent justify-center text-left p-6">
           <h1 className="text-6xl font-extrabold text-left">Hi, I'm Edgar Chang</h1>
