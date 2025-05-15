@@ -31,7 +31,7 @@
 body {
   background: #e7fff3;
   color: #0c0042;
-  font-family: var(--font-merriweather), serif;
+  font-family: var(--font-open-sans), sans-serif;
 }
 
 html {

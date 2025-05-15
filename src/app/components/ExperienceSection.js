@@ -1,16 +1,16 @@
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-primary to-fuchsia-300 p-6">
-      <h2 className="text-4xl font-bold mb-4">Experience</h2>
-      <div className="w-full max-w-6xl space-y-4"> {/* Updated max-w-4xl to max-w-6xl */}
-        <div className="p-4 bg-gray-100 shadow rounded-lg flex items-start gap-14"> {/* Added flex and gap */}
+    <section id="experience" className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-primary to-indigo-300 p-6">
+      <h2 className="text-5xl font-bold mb-10">Experience</h2>
+      <div className="w-full max-w-7xl space-y-12">
+        <div className="p-12 bg-gray-100 shadow rounded-lg flex items-start gap-14">
           <img
-            src="/ericsson_logo.png" // Replace with the actual logo path
+            src="/ericsson_logo.png"
             alt="Ericsson Logo"
-            className="w-36 h-36 object-contain" // Adjust size as needed
+            className="w-36 h-36 object-contain"
           />
-          <div>
-            <h3 className="text-3xl font-semibold">Software Developer at Ericsson</h3>
+          <div className="space-y-2">
+            <h3 className="text-3xl font-semibold">Software Developer</h3>
             <p className="text-gray-700 text-2xl">January 2022 - June 2024</p>
             <p className="mt-2 text-2xl">At Ericsson, I engineered Python-based microservices to process analytics data across active 5G radio access networks, contributing to a 60% reduction in network performance issues.
               I developed and maintained RESTful APIs supporting internal web applications and designed scalable deployment solutions using Docker Swarm and Kubernetes.
@@ -19,11 +19,19 @@ export default function ExperienceSection() {
               Throughout, I actively conducted detailed code reviews and contributed to a SAFe Agile development environment.</p>
           </div>
         </div>
-        <div className="p-4 bg-gray-100 shadow rounded-lg">
-          <h3 className="text-2xl font-semibold">Intern at ABC Tech</h3>
-          <p className="text-gray-700">Jun 2019 - Dec 2019</p>
-          <p className="mt-2">- Assisted in building internal tools to improve team productivity.</p>
-          <p>- Gained hands-on experience with cloud technologies and CI/CD pipelines.</p>
+        <div className="p-12 bg-gray-100 shadow rounded-lg flex items-start gap-14">
+          <img
+              src="/nuance_logo.png"
+              alt="Nuance Logo"
+              className="w-36 h-36 object-contain"
+            />
+          <div className="space-y-2">
+            <h3 className="text-3xl font-semibold">Software Engineer Intern</h3>
+            <p className="text-gray-700 text-2xl">May 2021 - August 2021</p>
+            <p className="mt-2">- Developed a Python-based web application to streamline internal processes, enhancing team efficiency.</p>
+            <p>- Collaborated with cross-functional teams to gather requirements and deliver solutions.</p>
+          </div>
+          
         </div>
       </div>
     </section>
